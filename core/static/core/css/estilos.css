@@ -1,0 +1,39 @@
+
+H1 {
+    font-size: 50pt;
+    font-family: 'Trebuchet MS';
+    text-align: center;
+    background-color: rgb(134, 235, 19);
+    color: black;
+}
+
+H2 {
+    font-size: 24pt;
+    font-family: cursive;
+    text-align: izquierda;
+    color: black;
+    text-align : center;
+    background-color : rgb(134, 235, 19);
+}
+
+H3 {
+    font-size: 35pt;
+    font-family: arial;
+    text-align: center;
+    color: black;
+}
+
+BODY {
+    background-color:white;
+    font-family: arial;
+    color: White;
+    
+}
+
+img {
+    display: block;
+    margin: 0px auto;
+    padding: 25px;
+    min-width: auto;
+    max-height: 500px;
+}

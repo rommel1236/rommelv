@@ -1,0 +1,77 @@
+<!-- CREAR UNA PESTAÑA EN SU PROYECTO DE DJANGO QUE TENGA COMO NOMBRE QUIENES SOMOS AL 
+DAR CLIC, PRESENTE LA PAGINA HTML CON LA SIGUIENTE INFORMACION: COMO TITULO DEBE DECIR
+LECCION DE PROGRAMACION VISUAL, UNA FOTO DE USTEDES, SUS APELLIDOS Y NOMBRES, CURSO, 
+PROFESOR DE LA MATERIA(UTILICE HERENCIA. -->
+
+{% extends 'herencias/principal.html' %}
+{% block titulo %}
+LECCION DE PROGRAMACION VISUAL
+{% endblock %}
+{%block titu%}
+{% endblock  %}
+{% block contenido  %}
+
+<center>
+    {% load static %}
+   
+        <style>
+            table {
+                font-family: Brush Script MT (cursiva);
+                border-collapse: collapse;
+                width: 100%;
+
+            }
+
+            td,
+            th {
+                border: 1px solid #a2e7e7;
+                text-align: left;
+                padding: 16px;
+                font-size: 24pt;
+                color: #110f0f;
+            }
+
+            tr:nth-child(even) {
+                background-color: rgb(134, 235, 19);
+                font-size: 24pt;
+                color: rgba(160, 208, 149, 0.6);
+            }
+        </style>
+    
+
+    
+    
+        <h2>LECCION DE PROGRAMACION VISUAL</h2>
+
+        <IMG src="{% static 'core/imagen/f.jpeg' %}">
+
+        <table>
+
+
+            <tr>
+                <td>APELLIDOS:</td>
+                <td>VASCONEZ MIÑO</td>
+            </tr>
+
+            <tr>
+                <th>NOMBRES:</th>
+                <th> ROMMEL MITCHELL</th>
+            </tr>
+            <tr>
+                <td>CURSO:</td>
+                <td>3"E" DSF</td>
+            </tr>
+
+            <tr>
+                <td>Profesor:</td>
+                <td>CARLOS LUIS PAZMIÑO</td>
+            </tr>
+
+        </table>
+        {% load static %}
+
+
+</CENTER>
+
+
+{% endblock %}

@@ -1,0 +1,84 @@
+{% extends 'herencias/principal.html' %}
+{% block titulo %}
+PRODUCTO
+{% endblock %}
+{% block contenido  %}
+{% load static %}
+<center>
+
+<IMG src="{% static 'core/imagen/ba2.jpg' %}">
+
+<html>
+<head>
+<style>
+table {
+
+  font-family: Times New Roman (serif);
+  border-collapse: collapse;
+  width: 100%;
+
+}
+
+td, th {
+  border: 1px solid #f1f5f5;
+  text-align: left;
+  padding: 16px;
+  font-size: 24pt;
+  color : #100d0d;
+}
+
+tr:nth-child(even) {
+   background-color: rgb(134, 235, 19);
+  font-size: 24pt;
+  color : #e5ce57;
+}
+</style>
+</head>
+<body>
+<table>
+  <tr>
+    <th>CODIGO DE PRODUCTO</th>
+    <th>DESCRIPCION DE PRODUCTO </th>
+    <th>PRECIO DEL PRODUCTO</th>
+  </tr>
+  <tr>
+    <td>BFRU</td>
+    <td>BATIDO DE FRUTILLA</td>
+    <td>$1,00</td>
+
+  </tr>
+  <tr>
+    <td>BBANA</td>
+    <td>BATIDO DE GUINEO</td>
+    <td>$1,00</td>
+
+      <tr>
+    <td>BAG</td>
+    <td>BATIDO DE AGUACATE</td>
+    <td>$1,20</td>
+  </tr>
+
+      <tr>
+    <td>BMOR</td>
+    <td>BATIDO DE  MORA</td>
+    <td>$1,00</td>
+  </tr>
+
+
+     <tr>
+      <td>BMAN</td>
+    <td>BATIDO DE MANZANA</td>
+    <td>$1,00</td>
+  </tr>
+
+  <tr>
+    <td>BDU</td>
+    <td>BATIDO DE DURAZNO </td>
+    <td>$2,00</td>
+  </tr>
+</table>
+    </CENTER>
+
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MI PRIMER CORE</title>
+    {% load static %}
+    <link rel="STYLESHEET"  href="{%static 'core/css/estilos.css'%}"> 
+	<link rel="STYLESHEET"  href="{%static 'core/css/menuUniverso.css'%}">
+
+
+</head>
+<body>
+<h1> Bienvenidos </h1>
+<div class="nav">
+  <nav class="menuCSS3">
+		<ul>
+			<li><a href="{% url 'core' %}">INICIO</a></li>
+			<li><a href="{% url 'noticias' %}">NOTICIAS</a>
+				<ul>
+					<li><a href="">Rommel</a></li>
+					<li><a href="">Vasconez</a></li>
+					<li><a href="">Miño</a></li>
+					<li><a href="">Bebitofiufiu</a></li>
+				</ul>
+			</li>
+			<li><a href="{% url 'deportes' %}">FARANDULAS</a></li>
+			<li><a href="{% url 'farandula' %}">DEPORTE</a>
+				<ul>
+					<li><a href="#">Email</a></li>
+					<li><a href="#">Mapa</a></li>
+				</ul>
+
+			</li>
+			<li><a href="{% url 'inicio' %}"> Batidos Sanos </a></li>
+		</ul>
+	</nav>
+</div>
+<IMG src="{% static 'core/imagen/goku.jpg' %}">
+
+<FOOTER class="fotter">
+	Rommel Vasconez Miño 3/E
+</FOOTER>
+</body>
+</html>

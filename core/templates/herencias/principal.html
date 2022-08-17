@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block titulo %} {% endblock  %}</title>
+    {% load static %}
+    <link rel="STYLESHEET"  href="{%static 'core/css/estilos.css'%}">
+	<link rel="STYLESHEET"  href="{%static 'core/css/menuUniverso.css'%}">
+
+</head>
+<body>
+<h1> Batidos Delicia</h1>
+<div class="nav">
+  <nav class="menuCSS3">
+		<ul>
+			<li><a href="{% url 'core' %}">INICIO</a></li>
+			<li><a href="{% url 'inicio' %}">Batidos Sanos</a></li>
+			<li><a href="{% url 'quienesomos' %}">¿QUIENES SOMOS?</a></li>
+			<li><a href="{% url 'producto' %}">NUESTRO PRODUCTO</a></li>
+			<li><a href="{% url 'contacto' %}">CONTACTO</a></li>
+			<li><a href="{% url 'quienessomos' %}">¿QUIENES SOMOS 2?</a></li>
+
+		</ul>
+	</nav>
+</div>
+{% block contenido %} {% endblock %}
+<FOOTER class="fotter">
+	SISTEMA CON DJANGO 3E
+</body>
+</html>

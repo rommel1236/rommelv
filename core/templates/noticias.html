@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Noticias</title>
+	{% load static %}
+    <link rel="STYLESHEET"  href="{%static 'core/css/estilos.css'%}"> 
+	<link rel="STYLESHEET"  href="{%static 'core/css/menuUniverso.css'%}">
+
+</head>
+<body>
+<h1>NOTICIAS</h1>
+<div class="nav">
+  <nav class="menuCSS3">
+		<ul>
+			<li><a href="{% url 'core' %}">INICIO</a></li>
+			<li><a href="{% url 'noticias' %}">NOTICIAS</a>
+				<ul>
+					<li><a href="">Rommel</a></li>
+					<li><a href="">Vasconez</a></li>
+					<li><a href="">Miño</a></li>
+					<li><a href="">Bebitofiufiu</a></li>
+				</ul>
+			</li>
+			<li><a href="{% url 'deportes' %}">DEPORTES</a></li>
+			<li><a href="{% url 'farandula' %}">FARANDULA</a>
+				<ul>
+					<li><a href="#">Email</a></li>
+					<li><a href="#">Mapa</a></li>
+				</ul>
+
+			</li>
+		</ul>
+	</nav>
+</div>
+<IMG src="{% static 'core/imagen/gogeta.jpg' %}">
+<FOOTER class="fotter">
+	Rommel Vasconez Miño 3/E
+</FOOTER>
+</body>
+</html>
